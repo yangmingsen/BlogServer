@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="plugins/angularjs1.4.6/angular.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/service/userService.js"></script>
+    <script src="js/controller/userController.js"></script>
+</head>
+<body>
+    <div ng-app="blogServer" ng-controller="userController" ng-init="getUser()">
+       <p>user={{user.username}}</p>
+    </div>
+</body>
+</html>
