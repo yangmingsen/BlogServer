@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*
+decription: 这是新添加的css 用于文章评论显示模块
+date: 2019-06-20
+*/
+#plpost {
+    margin: 0 20px;
+}
+.saying {
+    line-height: 30px;
+    color: #a9a6a6;
+}
+.yname {
+    margin: 10px 10px 10px 0;
+}
+textarea#saytext {
+    width: 100%;
+}
+#plpost input[type="submit"] {
+    display: block;
+    background: #303030;
+    color: #fff;
+    border: 0;
+    line-height: 30px;
+    padding: 0 20px;
+    border-radius: 5px;
+    float: right;
+}
+
+.fb {
+    width: 100%;
+}
+.fb ul {
+    margin: 10px 10px;
+    padding: 10px 10px 10px 70px;
+    border-bottom: #0e0e0e 1px solid;
+}
