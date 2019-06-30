@@ -3,6 +3,11 @@ app.controller("articleController",function ($scope,articleService) {
     $scope.save=function () {
 
         $scope.entity.content=edit.getHTML();
+        $scope.entity.publishStates=1; //发布状态默认为为公开 1,
+        $scope.entity.browseNum=0; //浏览数
+        $scope.entity.likeNum=0; //点赞数
+        $scope.entity.isDel=0;//删除默认为0
+
         var serviceObject;//服务层对象
         if($scope.entity.id != null)  {
             //修改
