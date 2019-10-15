@@ -94,21 +94,29 @@ $(document).ready(function () {
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
         window.scrollReveal = new scrollReveal({reset: true});
     };
-	
+
 //tab	
-    var oLi = document.getElementById("tab").getElementsByTagName("a");
-	var oUls = document.getElementById("content").getElementsByTagName("ul");
-	
-	for(var i = 0; i < oLi.length; i++)
-	{
-		oLi[i].index = i;
-		oLi[i].onmouseover = function ()
-		{
-			for(var n = 0; n < oLi.length; n++) oLi[n].className="";
-			this.className = "current";
-			for(var n = 0; n < oUls.length; n++) oUls[n].style.display = "none";
-			oUls[this.index].style.display = "block"
-		}	
-	};
+    var oLi = document.getElementById("blogtab").getElementsByTagName("li");
+    var oUls = document.getElementById("notice-content").getElementsByTagName("ul");
+
+    for(var i = 0; i < oLi.length; i++)
+    {
+        oLi[i].index = i;
+        //oLi[i].onmouseover = function ()
+        oLi[i].onclick = function ()
+        {
+            for(var n = 0; n < oLi.length; n++) oLi[n].className="";
+            this.className = "current";
+
+        }
+    };
+
+    for(var i = 0; i<oUls.length; i++) {
+        oUls[i].index = i;
+        oUls[i].onmouseover = function () {
+            for(var n = 0; n < oUls.length; n++) oUls[n].style.display = "none";
+            oUls[this.index].style.display = "block"
+        }
+    }
 		
 	});

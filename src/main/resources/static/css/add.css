@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /*
 decription: 这是新添加的css 用于文章评论显示模块
 date: 2019-06-20
@@ -35,4 +36,16 @@ textarea#saytext {
     margin: 10px 10px;
     padding: 10px 10px 10px 70px;
     border-bottom: #0e0e0e 1px solid;
+}
+
+.tag-item {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 4px 12px;
+    background: rgba(84,92,99,.1);
+    border-radius: 12px;
+    font-size: 12px;
+    color: #545c63;
+    line-height: 16px;
+    float: left;
 }

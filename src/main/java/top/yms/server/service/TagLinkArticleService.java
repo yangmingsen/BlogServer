@@ -25,5 +25,14 @@ public class TagLinkArticleService {
         return tagLinkArticleMapper.add(tagLinkArticle.getTagId(),tagLinkArticle.getArticleId());
     }
 
+    /***
+     *
+     * @param articleId
+     * @return
+     */
+    public int delete(long articleId) {
+        return tagLinkArticleMapper.delete(articleId);
+    }
+
 
 }

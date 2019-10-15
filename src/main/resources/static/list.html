@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文章_杨铭森个人日记</title>
+    <meta name="keywords" content="杨铭森的个人日记,文章,yangmingsen" />
+    <meta name="description" content="yangmingsen个人日记,文章;分享知识,分享生活,与时俱进,共同成长" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/m.css" rel="stylesheet">
+    <link href="css/add.css" rel="stylesheet">
+
+    <script src="./plugins/angularjs/angular.min.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/service/listService.js"></script>
+    <script src="./js/controller/listController.js"></script>
+
+    <script src="./js/js/jquery.min.js" ></script>
+    <script src="./js/js/jquery.easyfader.min.js"></script>
+    <script src="./js/js/hc-sticky.js"></script>
+    <script src="./js/js/comm.js"></script>
+    <script src="./js/js/scrollReveal.js"></script>
+    <!--[if lt IE 9]>
+    <script src="./js/js/modernizr.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="blogFront" ng-controller="listController" ng-init="loadInfo()">
+<header class="header-navigation" id="header">
+    <nav>
+        <div class="logo"><a href="#">世界,Sky</a></div>
+        <h2 id="mnavh"><span class="navicon"></span></h2>
+        <ul id="starlist">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list.html">文章</a></li>
+            <li><a href="share.html">相册</a></li>
+            <li><a href="about.html">我嘛</a></li>
+            <li><a href="time.html">时间轴</a></li>
+        </ul>
+        <div class="searchbox">
+            <div id="search_bar123" class="search_bar">
+                <input ng-model="keywords"  ng-keyup="enterEvent($event)" class="input" placeholder="想搜点什么呢.." type="text" name="keyboard12" id="keyboard12">
+                <p class="search_ico" ng-click="userClickSearch()"> <span></span></p>
+            </div>
+        </div>
+    </nav>
+</header>
+<article>
+    <main>
+        <div class="blogs" data-scroll-reveal="enter bottom over 1s" ng-repeat="art in resultMap.articles" >
+            <h3 class="blogtitle"><a href="./info.html#?id={{art.id}}" target="_blank" ng-bind-html="art.title"></a></h3>
+            <span class="blogpic"><a href="/" title=""><img src="images/1.jpg" alt=""></a></span>
+            <p class="blogtext" ng-bind-html="art.abstractContent"> </p>
+            <div class="bloginfo">
+                <ul>
+                    <li class="author"><a href="#">杨铭森</a></li>
+                    <li class="lmname"><a href="#">{{art.categoryName}}</a></li>
+                    <li class="timer">{{art.updateTime}}</li>
+                    <li class="view"><span>{{art.browseNum}}</span>已阅读</li>
+                    <li class="like">{{art.likeNum}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--    <div class="pagelist">-->
+        <!--      <a title="Total record">&nbsp;<b>160</b> </a>&nbsp;&nbsp;&nbsp;<b>1</b>&nbsp;-->
+        <!--      <a href="/jstt/index_2.html">2</a>&nbsp;-->
+        <!--      <a href="/jstt/index_3.html">3</a>&nbsp;-->
+        <!--      <a href="/jstt/index_4.html">4</a>&nbsp;-->
+        <!--      <a href="/jstt/index_5.html">5</a>-->
+        <!--      <a href="/jstt/index_6.html">6</a>&nbsp;-->
+        <!--      <a href="/jstt/index_2.html">下一页</a>&nbsp;-->
+        <!--      <a href="/jstt/index_14.html">尾页</a>-->
+        <!--    </div>-->
+
+    </main>
+    <aside class="r_box" >
+
+        <div class="wdxc">
+            <h2>图文精选</h2>
+            <ul>
+                <li><a href="/"><img src="images/7.jpg"></a></li>
+                <li><a href="/"><img src="images/8.jpg"></a></li>
+                <li><a href="/"><img src="images/9.jpg"></a></li>
+                <li><a href="/"><img src="images/10.jpg"></a></li>
+                <li><a href="/"><img src="images/11.jpg"></a></li>
+                <li><a href="/"><img src="images/12.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="fenlei">
+            <h2>文章分类</h2>
+            <ul>
+                <li ng-repeat="ctg in resultMap.categorys"><a href="#" ng-click="updateByCategory(ctg.id)" target="_top">{{ctg.categoryName}}</a></li>
+            </ul>
+        </div>
+        <div class="cloud">
+            <h2>标签云</h2>
+            <ul >
+                <!--        <input ng-repeat="tag in resultMap.tags" type="button" ng-click="update(tag.id)" value="{{tag.tagName}}">-->
+                <a ng-repeat="tag in resultMap.tags"  href="#" ng-click="updateByTag(tag.id)"  target="_self">{{tag.tagName}}</a>
+            </ul>
+        </div>
+        <div class="tuijian">
+            <h2 id="tab"><a href="#"class="current">点击排行</a><a href="#">站长推荐</a></h2>
+
+            <div id="content">
+                <ul style="display:block;">
+                    <li><a href="/">第二届 优秀个人日记模板比赛参选活动</a></li>
+                    <li><a href="/">【活动作品】柠檬绿兔小白个人日记模板</a></li>
+                    <li><a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></li>
+                    <li><a href="/">2014年度优秀个人日记评选活动</a></li>
+                    <li><a href="/">你是什么人便会遇上什么人</a></li>
+                    <li><a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></li>
+                    <li><a href="/">第二届 优秀个人日记模板比赛参选活动</a></li>
+                    <li><a href="/">个人日记模板《绅士》后台管理</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="/">个人日记，我为什么要用帝国cms？</a></li>
+                    <li><a href="/">D设计师日记-一个热爱生活的设计师</a></li>
+                    <li><a href="/">东轩日记，我看到了你的坚持！</a></li>
+                    <li><a href="/">程序员创业，就得“豁得出去”！</a></li>
+                    <li><a href="/">张建华 一个90后年轻站长！我们是对手亦是朋友！</a></li>
+                    <li><a href="/">《奋斗电商》看知名微商如何做日记引流？</a></li>
+                    <li><a href="/">《寻之旅》一个关于旅游，游记的个人日记</a></li>
+                    <li><a href="/">【匆匆那些年】总结个人日记经历的这四年</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="guanzhu">
+            <h2>关注我 么么哒</h2>
+            <ul>
+                <img src="images/wx.jpg">
+            </ul>
+        </div>
+
+    </aside>
+</article>
+<footer>
+    <p>Design by <a href="http://www.yangqq.com" target="_blank">杨青个人日记</a> <a href="/">蜀ICP备11002373号-1</a><a href="/" class="links">友情链接</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a>
+</body>
+</html>
