@@ -47,6 +47,22 @@ app.controller('infoController',function ($scope,$filter,$location,$sce,infoServ
      * 添加评论方法
      */
     $scope.addComment=function() {
+
+        /**
+         * 防止空用户名和内容
+         */
+        var username = $scope.comment.username;
+        if (username == null || username.length<1) {
+            alert("您需要输入用户名哎!");
+            return ;
+        }
+
+        var content = $scope.comment.content;
+        if (content == null || content.length<1) {
+            alert("您需要输入评论内容哎!");
+            return ;
+        }
+
         $scope.comment.articleId=parseInt($scope.resultMap.article.id);
 
         //创建时间

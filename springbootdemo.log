@@ -278,3 +278,54 @@ org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededExcep
 2019-10-16 16:58:08.892  INFO 21353 --- [http-nio-8080-exec-1] t.y.s.controller.admin.FileController    : request image url=15712162757680002831favor22.jpg
 2019-10-16 16:58:11.558  INFO 21353 --- [http-nio-8080-exec-10] t.y.s.controller.admin.FileController    : request image url=15712162757680002831favor22.jpg
 2019-10-16 16:58:53.447  INFO 21353 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 20:44:07.908  INFO 5790 --- [main] top.yms.server.BlogServerApplication     : Starting BlogServerApplication on yms with PID 5790 (/home/yms/project/java/springboot/BlogServer/target/classes started by yms in /home/yms/project/java/springboot/BlogServer)
+2019-10-16 20:44:07.915  INFO 5790 --- [main] top.yms.server.BlogServerApplication     : No active profile set, falling back to default profiles: default
+2019-10-16 20:44:08.971  INFO 5790 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 20:44:08.987  INFO 5790 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 20:44:08.988  INFO 5790 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-16 20:44:09.046  INFO 5790 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 20:44:09.046  INFO 5790 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1074 ms
+2019-10-16 20:44:09.322  INFO 5790 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 20:44:09.385  INFO 5790 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-10-16 20:44:09.538  INFO 5790 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 20:44:09.540  INFO 5790 --- [main] top.yms.server.BlogServerApplication     : Started BlogServerApplication in 2.204 seconds (JVM running for 2.669)
+2019-10-16 20:46:33.044  INFO 5790 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 20:46:33.044  INFO 5790 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 20:46:33.049  INFO 5790 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-16 20:46:33.240  INFO 5790 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-16 21:27:46.074  INFO 5790 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 21:27:46.078  INFO 5790 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-16 21:27:53.442  INFO 10885 --- [main] top.yms.server.BlogServerApplication     : Starting BlogServerApplication on yms with PID 10885 (/home/yms/project/java/springboot/BlogServer/target/classes started by yms in /home/yms/project/java/springboot/BlogServer)
+2019-10-16 21:27:53.445  INFO 10885 --- [main] top.yms.server.BlogServerApplication     : No active profile set, falling back to default profiles: default
+2019-10-16 21:27:54.271  INFO 10885 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 21:27:54.289  INFO 10885 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 21:27:54.289  INFO 10885 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-16 21:27:54.350  INFO 10885 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 21:27:54.350  INFO 10885 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 876 ms
+2019-10-16 21:27:54.616  INFO 10885 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 21:27:54.681  INFO 10885 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-10-16 21:27:54.833  INFO 10885 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 21:27:54.835  INFO 10885 --- [main] top.yms.server.BlogServerApplication     : Started BlogServerApplication in 1.676 seconds (JVM running for 1.996)
+2019-10-16 21:28:08.737  INFO 10885 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 21:28:08.737  INFO 10885 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 21:28:08.741  INFO 10885 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-16 21:28:16.574  INFO 10885 --- [http-nio-8080-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-16 21:41:25.377  INFO 10885 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 21:41:25.380  INFO 10885 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-10-16 21:41:28.431  INFO 12186 --- [main] top.yms.server.BlogServerApplication     : Starting BlogServerApplication on yms with PID 12186 (/home/yms/project/java/springboot/BlogServer/target/classes started by yms in /home/yms/project/java/springboot/BlogServer)
+2019-10-16 21:41:28.433  INFO 12186 --- [main] top.yms.server.BlogServerApplication     : No active profile set, falling back to default profiles: default
+2019-10-16 21:41:29.226  INFO 12186 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-16 21:41:29.241  INFO 12186 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-16 21:41:29.242  INFO 12186 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-16 21:41:29.299  INFO 12186 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-16 21:41:29.299  INFO 12186 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 838 ms
+2019-10-16 21:41:29.560  INFO 12186 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-16 21:41:29.647  INFO 12186 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-10-16 21:41:29.809  INFO 12186 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-16 21:41:29.812  INFO 12186 --- [main] top.yms.server.BlogServerApplication     : Started BlogServerApplication in 1.647 seconds (JVM running for 1.964)
+2019-10-16 21:41:48.518  INFO 12186 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-16 21:41:48.518  INFO 12186 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-16 21:41:48.522  INFO 12186 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-16 21:41:48.693  INFO 12186 --- [http-nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-16 21:46:39.134  INFO 12186 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-16 21:46:39.137  INFO 12186 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
