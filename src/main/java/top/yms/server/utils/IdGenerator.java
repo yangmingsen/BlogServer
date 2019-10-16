@@ -27,4 +27,14 @@ public class IdGenerator {
 
     }
 
+    /**
+     * 生成17位的唯一id
+     *  时间戳+2位(1-99)的数字
+     * @return
+     */
+    public static String randomImageName() {
+        String s = System.currentTimeMillis() * 1000 + "" + (ThreadLocalRandom.current().nextInt(9999) + 1);
+        return s;
+    }
+
 }
