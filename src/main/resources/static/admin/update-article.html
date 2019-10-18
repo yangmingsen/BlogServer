@@ -201,6 +201,11 @@
                   <input ng-model="entity.isPublic" type="radio" name="visibility" value="1" checked/>公开
                   <input ng-model="entity.isPublic" type="radio" name="visibility" value="0" />私密
                 </p>
+                <p>
+                  <label>允许评论：</label>
+                  <input ng-model="entity.allowComment" type="radio" name="visibility1" value="1" checked/>允许
+                  <input ng-model="entity.allowComment" type="radio" name="visibility1" value="0" />禁止
+                </p>
                 <p><label>发布于：</label><span class="article-time-display"><input ng-model="entity.updateTime" style="border: none;" type="datetime" name="time" value="2016-01-09 17:29:37" /></span></p>
               </div>
               <div class="add-article-box-footer">
@@ -228,13 +233,13 @@
     //这个配置在simple.html中并没有，但是为了能够提交表单，使用这个配置可以让构造出来的HTML代码直接在第二个隐藏的textarea域中，方便post提交表单。
     imageUpload : true,
     imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-    imageUploadURL : "/blog/photo/upload",
+    imageUploadURL : "/file/upload/img",
     saveHTMLToTextarea : true
   });
 
 </script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/admin-scripts.js"></script>
+<script src="js/js/bootstrap.min.js"></script>
+<script src="js/js/admin-scripts.js"></script>
 
 <!--个人信息模态框-->
 <div class="modal fade" id="seeUserInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

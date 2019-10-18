@@ -21,7 +21,7 @@ import java.util.Map;
 public class FileController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FileController.class);
-    private static String path = "/home/yms/tmp/upload/";
+    private static String path = "D:\\setup\\tmp\\";
 
     @PostMapping("/upload/img")
     @ResponseBody
