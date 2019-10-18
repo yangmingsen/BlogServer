@@ -39,6 +39,73 @@
 5.浏览器上输入`http://localhost:8080/index.html` 即可；后台管理端请访问`http://localhost:8080/admin/main.html`
 
 
+### 项目结构
+```text
+Java
+└─top
+    └─yms
+        └─server
+            ├─config     // 运行配置文件,我配置了跨域一些东西
+            ├─controller
+            │  ├─admin   //管理后台业务控制
+            │  └─blog    //博客前台
+            ├─dao        //数据访问层
+            ├─entity     //实体定义
+            │  └─article 
+            ├─service    //服务器控制
+            └─utils      //一些小工具,如时间生成,Id生成...
+            
+Resources
+└─static
+    ├─admin                 //管理后台界面
+    │  ├─css
+    │  ├─fonts
+    │  ├─images             //后台静态图片路径
+    │  │  ├─404
+    │  │  ├─arclist
+    │  │  ├─banner
+    │  │  ├─baoman
+    │  │  ├─face
+    │  │  ├─icon
+    │  │  └─snow
+    │  └─js                 //管理后台AngularJs控制文件                 
+    │      ├─controller     //管理后台AngularJS控制层：控制前端的一些业务逻辑
+    │      ├─js             //其他的一些JS文件
+    │      └─service        //管理后台AngularJS的服务层: 掉服务接口的
+    ├─css
+    ├─images                //前台静态图片路径
+    │  └─anonymous          //这个是匿名评论人的头像文件
+    ├─js
+    │  ├─controller         //前台AngularJs控制文件         
+    │  ├─js
+    │  └─service            //前台AngularJs服务层控制文件 
+    ├─plugins
+    │  ├─angularjs
+    │  │  └─i18n
+    │  └─markdown           //Markdown配置文件   
+    │      ├─css
+    │      ├─docs
+    │      │  ├─fonts
+    │      │  ├─scripts
+    │      │  │  └─prettify
+    │      │  └─styles
+    │      ├─fonts
+    │      ├─images
+    │      │  └─logos
+    │      ├─languages
+    │      ├─lib            //Markdown的库文件   
+    │      ├─plugins
+    │      ├─scss
+    │      │  └─lib
+    │      ├─src
+    │      └─tests
+    │          ├─css
+    │          ├─js
+    │          └─qunit
+    └─public
+
+```
+
 
 #### 注意
 1.因为我还没有实现服务器,如果你要我的项目需要修改.\top\yms\server\controller\admin\FileController.java这个文件的图片存储路径
