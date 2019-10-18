@@ -733,3 +733,14 @@ java.io.FileNotFoundException: D:\setup\tmp\1571381026367000247dlzb2.jpg (系统
 2019-10-18 16:32:16.670  INFO 9308 --- [http-nio-8080-exec-10] t.y.s.controller.admin.FileController    : request image url=15713865516880009414154692948041.jpg
 2019-10-18 16:32:32.862  INFO 9308 --- [http-nio-8080-exec-1] t.y.s.controller.admin.FileController    : request image url=15713865516880009414154692948041.jpg
 2019-10-18 16:35:56.969  INFO 9308 --- [http-nio-8080-exec-1] t.y.s.controller.admin.FileController    : request image url=15713865516880009414154692948041.jpg
+2019-10-18 17:44:32.506  INFO 5360 --- [main] top.yms.server.BlogServerApplication     : Starting BlogServerApplication on Yangmingsen with PID 5360 (G:\Project\Java\IdeaProject\BlogServer\target\classes started by yangmingsen in G:\Project\Java\IdeaProject\BlogServer)
+2019-10-18 17:44:32.510  INFO 5360 --- [main] top.yms.server.BlogServerApplication     : No active profile set, falling back to default profiles: default
+2019-10-18 17:44:33.697  INFO 5360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 17:44:33.717  INFO 5360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-18 17:44:33.718  INFO 5360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-10-18 17:44:33.847  INFO 5360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-18 17:44:33.847  INFO 5360 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1281 ms
+2019-10-18 17:44:34.223  INFO 5360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-18 17:44:34.311  INFO 5360 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-10-18 17:44:34.520  INFO 5360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-18 17:44:34.523  INFO 5360 --- [main] top.yms.server.BlogServerApplication     : Started BlogServerApplication in 2.532 seconds (JVM running for 3.781)
