@@ -2,7 +2,7 @@
 
 ### 基于SpringBoot+MyBatis+AngularJS前后端分离的个人网络博客
 
-![图片高度](https://img-blog.csdnimg.cn/20191018175704392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3lhbmdtaW5nc2VuMTk5OQ==,size_16,color_FFFFFF,t_70)
+![图片高度](https://raw.githubusercontent.com/yangmingsen/BlogServer/master/index.png)
 
 ### 主要技术
 - SpringBoot
