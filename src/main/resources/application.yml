@@ -29,5 +29,5 @@ server:
   port: 8080
 
 logging:
-  path: /home/yms/tmp/upload/
+  path:
   file: springbootdemo.log
