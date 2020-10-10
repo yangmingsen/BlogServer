@@ -1,8 +1,11 @@
 package top.yms.server.controller.blog;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import top.yms.server.controller.admin.FileController;
 import top.yms.server.entity.Article;
 import top.yms.server.entity.IndexGroup;
 import top.yms.server.service.*;
@@ -29,9 +32,13 @@ public class indexController {
     @Autowired
     private PublicService publicService;
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(indexController.class);
+
 
     @RequestMapping("/main")
     public Map<String, Object> main() {
+
+
         //查文章
         //查分类
         //查标签
