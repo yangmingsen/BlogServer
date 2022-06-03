@@ -31,3 +31,10 @@ server:
 logging:
   path:
   file: springbootdemo.log
+  level:
+    top:
+      yms:
+        server: debug
+
+
+debug: false

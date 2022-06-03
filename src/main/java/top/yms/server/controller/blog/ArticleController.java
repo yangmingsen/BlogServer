@@ -40,7 +40,6 @@ public class ArticleController {
     public Map<String,Object> findAllByTagId(@RequestBody Map searchMap) {
 
         long tagId = (long)searchMap.get("tagId");
-//        Map<String, Object> map = publicService.getTagAndCategoryInfo();
         Map<String,Object> map = new ConcurrentHashMap<>();
         map.put("articles",articleService.findAllByTagId(tagId));
 
@@ -64,7 +63,6 @@ public class ArticleController {
     @RequestMapping("/list/findAllByCategoryId")
     public Map<String,Object> findAllByCategoryId(@RequestBody Map searchMap) {
         int categoryId = (int)searchMap.get("categoryId");
-        //Map<String, Object> map = publicService.getTagAndCategoryInfo();
         Map<String,Object> map = new ConcurrentHashMap<>();
         map.put("articles",articleService.findAllByCategoryId(categoryId));
 

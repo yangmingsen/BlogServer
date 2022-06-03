@@ -2,9 +2,11 @@ package top.yms.server.controller.blog;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import top.yms.server.config.RestfulResult;
 import top.yms.server.entity.Article;
 import top.yms.server.service.*;
 
@@ -26,6 +28,7 @@ public class InfoController {
 
 
     @RequestMapping("/findOne")
+    @RestfulResult
     public Map<String,Object> findOne(@RequestBody Map searchMap) {
         if (searchMap == null) return null;
 
@@ -40,10 +43,20 @@ public class InfoController {
 
     }
 
+
+    private int cnt = 1;
+
     @RequestMapping("/updateLikeNum")
+    //@RestfulResult
+    @Transactional
     public void updateLikeNum(@RequestBody Map searchMap) {
         long articleId = (long) searchMap.get("id");
         articleService.updateLikeNum(articleId);
+        System.out.println("==========cnt==="+cnt);
+        if (cnt % 3 ==0 ) {
+            int x = 1/0;
+        }
+        cnt++;
     }
 
 }
