@@ -35,7 +35,6 @@ public class CommentController {
         if (searchMap == null) return null;
 
         return commentService.findAllByArticleId((long)searchMap.get("articleId"));
-
     }
 
     /***
@@ -56,6 +55,7 @@ public class CommentController {
 
         if (comment !=null) {
             commentService.add(comment);
+            System.out.println(comment.toString());
 
             res = new Result(true,"添加评论成功");
         } else {
